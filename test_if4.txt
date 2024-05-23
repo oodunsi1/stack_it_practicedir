@@ -10,6 +10,15 @@ echo "The second comm line arg is: $2"
 # use "$#" to return the number of command line arguments
 echo "we have $# command line arguments for this conditional check"
 
+#Check Usage
+if(( $# !=2 ))
+ then
+   echo "Usage: To run this script, you need:
+         comm_arg1
+         comm arg2
+         "
+   exit
+fi
 
 
 #main body
