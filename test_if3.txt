@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Variable declaration
+x=$1
+
+#main body
+
+if (( x==5 ))
+then
+ echo "x is equal to 5"
+else
+ echo "x is Not equal to 5"
+fi
