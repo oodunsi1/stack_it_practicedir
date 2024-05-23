@@ -3,6 +3,9 @@
 #Variable declaration
 x=$1
 y=$2
+name=$3
+
+echo "$name"
 
 echo "The first comm line arg is: $1"
 echo "The second comm line arg is: $2"
@@ -11,7 +14,7 @@ echo "The second comm line arg is: $2"
 echo "we have $# command line arguments for this conditional check"
 
 #Check Usage
-if(( $# !=2 ))
+if(( $# !=3 ))
  then
    echo "Usage: To run this script, you need:
          comm_arg1
@@ -21,7 +24,13 @@ if(( $# !=2 ))
 fi
 
 
+
 #main body
+
+if [[ $name == 'Sandra' ]]
+then
+  echo "Hi $name, welcome to pur scripting program!"
+fi
 
 if (( x==5 ))
 then
